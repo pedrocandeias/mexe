@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+     SVG Symbol Icons | Nucleo
+    </title>
+   </head>
+   <body class="">
+    <ul>
+     <li>
+      <div class="svg-wrapper">
+       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+        <rect data-element="frame" x="0" y="0" width="48" height="48" rx="24" ry="24" stroke="none" fill="#ffffff"/>
+        <g class="nc-icon-wrapper" stroke="none" fill="#111111">
+         <path d="M24 4C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm0 24l-8-8h16l-8 8z"/>
+        </g>
+       </svg>
+      </div>
+      <p  data-folder="/icons.svg">
+       &lt;svg class="icon"&gt;&lt;use href="#icon-arrow_drop_down" xlink:href="#icon-arrow_drop_down"/&gt;&lt;/svg&gt;
+      </p>
+     </li>
+    </ul>
+    <style>
+     *, *::after, *::before { box-sizing: border-box;}
+html { font-size: 62.5%;} 
+body { font-size: 1.6rem; font-family: sans-serif; color: #333333; margin: 0; padding: 24px; background:#ffffff;}
+header {padding: 24px 0; display: flex; justify-content: center;}
+ul {list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: center;}
+ul li { padding: 32px 48px 48px; border-radius: .25em; cursor: pointer; transition: background 0.2s; position: relative; display: flex; justify-content: center; align-items: center;}
+ul li:hover { background: rgba(0,0,0,0.07);}
+.dark-background ul li:hover {background: rgba(255, 255, 255, 0.12);}
+ul p { font-size: 1.1rem; margin: 0; color: rgba(0, 0, 0, 0.8); -webkit-user-select: auto; -moz-user-select: auto; -ms-user-select: auto; user-select: auto; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; position: absolute; bottom: 16px; left: 0; width: 100%; padding: 0 16px;} 
+.dark-background ul p { color: rgba(255,255,255,0.8);} 
+ul p::selection { background: rgba(0, 0, 0, 0.9); color: white;} 
+ul p::-moz-selection { background: rgba(0, 0, 0, 0.9); color: white;}
+.dark-background ul p::selection { background: #fff; color: rgba(0,0,0,0.9);} 
+.dark-background ul p::-moz-selection { background: #fff; color: rgba(0,0,0,0.9);} 
+.svg-wrapper svg{display:block; width: 32px; height: auto; max-height: 32px;}
+.external-reference p {margin: 0;}
+.external-reference label {font-size: 1.4rem;color: rgba(0,0,0,0.9);}
+.dark-background .external-reference label {color: #fff;}
+    </style>
+    <script>
+     function SelectText(element) {var doc = document , text = element , range, selection; if (doc.body.createTextRange) { range = document.body.createTextRange(); range.moveToElementText(text); range.select(); } else if (window.getSelection) { selection = window.getSelection(); range = document.createRange(); range.selectNodeContents(text); selection.removeAllRanges(); selection.addRange(range); }}window.onload = function() {var listItems = document.getElementsByTagName("li");for (var i = 0; i 
+    < listItems.length; i++) {listItems[i].onclick = function fun() {var item = this.getElementsByTagName("p");SelectText(item[0]);}}}</script>
+   </body>
+  </html>
